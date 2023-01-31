@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/stylesheets/index.css">
+  <title>Calculator App | @KateIvesDev </title>
+</head>
+<body>
+  <main class="calculator-wrapper">
+    <div class="calculator-body">
+      <section class="calculator-header">
+        <h1 class="header-logo">calc</h1>
+        <fieldset>
+          <div class="toggle-field-name">THEME</div>
+          <div class="toggle-wrapper">
+            <label for="theme1-radio">1</label>
+            <input type="radio" id="theme1-radio" name="theme" value="theme1" />
+          </div>
+          <div class="toggle-wrapper">
+            <label for="theme2-radio">2</label>
+            <input type="radio" id="theme2-radio" name="theme" value="theme2"/>
+          </div>
+          <div class="toggle-wrapper">
+            <label for="theme3-radio">3</label>
+            <input type="radio" id="theme3-radio" name="theme" value="theme3" />
+          </div>
+          <div class="toggle-background">
+            <button aria-label="theme-switch-button" class="toggle-circle" id="toggle" ></button>
+          </div>
+        </fieldset>
+      </section>
+      <section class="calculator-display">
+        <span data-display></span>
+      </section>
+      <section class="calculator-keypad-wrapper">
+        <button data-num class="math-btn">7</button>
+        <button data-num class="math-btn">8</button>
+        <button data-num class="math-btn">9</button>
+        <button data-delete class="function-btn">DEL</button>
+        <button data-num class="math-btn">4</button>
+        <button data-num class="math-btn">5</button>
+        <button data-num class="math-btn">6</button>
+        <button data-operator class="math-btn">+</button>
+        <button data-num class="math-btn">1</button>
+        <button data-num class="math-btn">2</button>
+        <button data-num class="math-btn">3</button>
+        <button data-operator class="math-btn">-</button>
+        <button data-num class="math-btn">.</button>
+        <button data-num class="math-btn">0</button>
+        <button data-operator class="math-btn">/</button>
+        <button data-operator class="math-btn">x</button>
+        <button data-clear class="function-btn reset">RESET</button>
+        <button data-equals class="equals-btn">=</button>
+      </section>
+    </div>
+    <footer class="attribution">
+     <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+     <span>Coded by <a href="https://www.kateives.com">Kate Ives</a>.</span>
+    </footer>
+  </main>
+  <script type="text/javascript" src="./scripts/calculator.js"></script>
+  <script type="text/javascript" src="./scripts/theme-switch.js"></script>
+</body>
+</html>

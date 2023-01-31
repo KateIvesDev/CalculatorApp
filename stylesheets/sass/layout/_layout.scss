@@ -1,0 +1,80 @@
+@use '../utilities/mixins' as *;
+@use '../themes/themes' as *;
+@use '../utilities/variables' as *;
+
+.calculator-wrapper {
+    transition: background-color .4s ease-in-out;
+    padding: 1.25em 0;
+    height: 100vh;
+}
+
+.calculator-body {
+    padding: 0;
+    width: 21.875em;
+    margin: 0 auto;
+    transition: background-color .4s ease-in-out;
+
+    @include md {
+        width: 34.375em;
+    }
+}
+.calculator-header {
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+    align-self: flex-end;
+}
+
+.calculator-display {
+    border-radius: #{$border-radius};
+    height: 90px;
+    margin: 20px 0;
+    text-align: right;
+    padding: 25px 10px;
+}
+
+.calculator-keypad-wrapper {
+    width: 100%;
+    height: 26.250em;
+    border-radius: #{$border-radius};
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.938em;
+    padding: 1.8em;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+}
+
+@include themify($themes) {
+
+    body {
+        background-color: themed('main-bg-color');
+    }
+
+    a {
+        color: themed('attribution-link-color');
+
+        &:hover {
+            color: themed('attribution-link-active-color')
+        }
+    }
+
+    .calculator-wrapper {
+        background-color: themed('main-bg-color');
+        color: themed('text-color');
+    }
+   
+    .calculator-display{
+        background-color: themed('display-bg-color');
+    }
+
+    .calculator-keypad-wrapper {
+        background-color: themed('keypad-bg-color');
+    }
+};
+

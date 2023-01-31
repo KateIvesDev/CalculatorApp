@@ -1,0 +1,41 @@
+@use '../utilities/mixins' as *;
+
+@import url(https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap);
+
+
+$league-spartan: 'League Spartan', sans-serif;
+
+body {
+    font-family: $league-spartan;
+    font-size: 16px;
+}
+
+button {
+    font-family: $league-spartan;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+fieldset{
+    font-size: .7em;
+}
+
+footer {
+    font-size: 1em
+}
+
+.header-logo {
+    font-size: 2.1em;
+
+}
+.calculator-display {
+    font-size: 2.5em;
+}
+
+.function-btn, .equals-btn {
+    font-size: 1.2em;
+    @include md {
+        font-size: 1.6em;
+    }
+}
+

@@ -1,0 +1,50 @@
+
+//Universal Colors
+$white: hsl(0, 0%, 100%);
+
+//Theme-1 Colors
+$dark-blue-15: hsl(224, 36%, 15%);
+$dark-blue-20: hsl(223, 31%, 20%);
+$dark-blue-25: hsl(222, 26%, 31%);
+$dark-blue-30: hsl(221, 14%, 31%);
+$dark-blue-35: hsl(224, 28%, 35%);
+$dark-blue-45: hsl(225, 21%, 49%);
+$warm-gray-65: hsl(28, 16%, 65%);
+$warm-gray-85: hsl(30, 25%, 89%); 
+$red-35: hsl(6, 70%, 34%);
+$red-50: hsl(6, 63%, 50%);
+
+//Theme-2 Colors
+
+$light-gray-95: hsl(0, 0%, 93%);
+$light-gray-90: hsl(0, 0%, 90%);
+$light-gray-80: hsl(0, 5%, 81%);
+$dark-cyan-35: hsl(185, 42%, 37%);
+$dark-cyan-25: hsl(185, 58%, 25%);
+$orange-40: hsl(25, 98%, 40%);
+$orange-25: hsl(25, 99%, 27%);
+$warm-gray-90: hsl(45, 7%, 89%);
+$warm-gray-60: hsl(35, 11%, 61%);
+$warm-gray-20: hsl(60, 10%, 19%);
+
+//Theme-3 Colors
+
+$dark-violet-10: hsl(268, 75%, 9%);
+$dark-violet-15: hsl(268, 71%, 12%);
+$dark-violet-20: hsl(268, 47%, 21%);
+$dark-violet-25: hsl(281, 89%, 26%);
+$magenta-50: hsl(285, 91%, 52%);
+$magenta-35: hsl(290, 70%, 36%);
+$cyan-45: hsl(176, 100%, 44%);
+$cyan-70:hsl(177, 92%, 70%);
+$dark-blue-10: hsl(198, 20%, 13%);
+$yellow-60: hsl(52, 100%, 62%);
+
+
+//Other Variables
+$border-radius: 5px;
+
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;

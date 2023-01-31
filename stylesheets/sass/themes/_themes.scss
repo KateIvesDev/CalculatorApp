@@ -1,0 +1,95 @@
+@use '../utilities/variables' as *;
+
+$themes: (
+    theme-1: (
+        'main-bg-color': $dark-blue-25,
+        'keypad-bg-color': $dark-blue-20,
+        'display-bg-color': $dark-blue-15,
+        'text-color': $white,
+
+        'key-main-color': $warm-gray-85,
+        'key-main-shadow-color': $warm-gray-65,
+        'key-main-active-color': $white,
+        'key-main-text-color': $dark-blue-30,
+
+        'key-function-color': $dark-blue-45,
+        'key-function-shadow-color': $dark-blue-35,
+        'key-function-active-color': lighten($dark-blue-45, 10%),
+        'key-function-text-color': $white,
+
+        'key-equals-color': $red-50,
+        'key-equals-shadow-color': $red-35,
+        'key-equals-active-color': lighten($red-50, 10%),
+        'key-equals-text-color': $white,
+
+        'toggle-bg-color': $dark-blue-20,
+        'toggle-btn-color': $red-50,
+        'toggle-btn-active-color': lighten($red-50, 10%),
+        'toggle-btn-position': 5px,
+
+        'attribution-link-color': $red-50,
+        'attribution-link-active-color': lighten($red-50, 10%),
+
+    ),
+    theme-2: (
+        'main-bg-color': $light-gray-90,
+        'keypad-bg-color': $light-gray-80,
+        'display-bg-color': $light-gray-95,
+        'text-color': $warm-gray-20,
+
+        'key-main-color': $warm-gray-90,
+        'key-main-shadow-color': $warm-gray-60,
+        'key-main-active-color': $white,
+        'key-main-text-color': $warm-gray-20,
+
+        'key-function-color': $dark-cyan-35,
+        'key-function-shadow-color': $dark-cyan-25,
+        'key-function-active-color': lighten($dark-cyan-35, 10%),
+        'key-function-text-color': $white,
+
+        'key-equals-color': $orange-40,
+        'key-equals-shadow-color': $orange-25,
+        'key-equals-active-color': lighten($orange-40, 10%),
+        'key-equals-text-color': $white,
+
+        'toggle-bg-color': $light-gray-80,
+        'toggle-btn-color': $orange-40,
+        'toggle-btn-active-color': lighten($orange-40, 10%),
+        'toggle-btn-position': 30px,
+
+        'attribution-link-color': $orange-40,
+        'attribution-link-active-color': lighten($orange-40, 10%),
+        
+    ),
+    theme-3:(
+        'main-bg-color': $dark-violet-10,
+        'keypad-bg-color': $dark-violet-15,
+        'display-bg-color': $dark-violet-15,
+        'text-color': $yellow-60,
+
+        'key-main-color': $dark-violet-20,
+        'key-main-shadow-color': $magenta-35,
+        'key-main-active-color': lighten($dark-violet-20, 10%),
+        'key-main-text-color': $yellow-60,
+
+        'key-function-color': $dark-violet-25,
+        'key-function-shadow-color': $magenta-50,
+        'key-function-active-color': lighten($dark-violet-25, 10%),
+        'key-function-text-color': $white,
+
+        'key-equals-color': $cyan-45,
+        'key-equals-shadow-color': $cyan-70,
+        'key-equals-active-color': lighten($cyan-45, 10%),
+        'key-equals-text-color': $dark-blue-10,
+
+        'toggle-bg-color': $dark-violet-15,
+        'toggle-btn-color': $cyan-45,
+        'toggle-btn-active-color': lighten($cyan-45, 10%),
+        'toggle-btn-position': 55px,
+
+        'attribution-link-color': $cyan-45,
+        'attribution-link-active-color': lighten($cyan-45, 10%),
+
+    )
+)
+

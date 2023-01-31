@@ -1,0 +1,40 @@
+@use '../themes/themes' as *;
+@use '../utilities/variables' as *;
+
+@mixin clearfix {
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  @mixin themify($themes) {
+    @each $name, $values in $themes {
+      .#{$name}-theme {
+        $theme-map: $values !global;
+        @content;
+      }
+    }
+  }
+  @function themed($key) {
+    @return map-get($theme-map, $key);
+  }
+
+  @mixin sm {
+    @media (min-width: #{$screen-sm-min}){
+      @content;
+    }
+  }
+
+  @mixin md {
+    @media (min-width: #{$screen-md-min}){
+      @content;
+    }
+  }
+
+  @mixin lg {
+    @media (min-width: #{$screen-lg-min}){
+      @content;
+    }
+  }

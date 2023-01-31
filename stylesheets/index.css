@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+fieldset {
+  font-size: 0.7em;
+}
+
+footer {
+  font-size: 1em;
+}
+
+.header-logo {
+  font-size: 2.1em;
+}
+
+.calculator-display {
+  font-size: 2.5em;
+}
+
+.function-btn, .equals-btn {
+  font-size: 1.2em;
+}
+@media (min-width: 768px) {
+  .function-btn, .equals-btn {
+    font-size: 1.6em;
+  }
+}
+
+.calculator-wrapper {
+  transition: background-color 0.4s ease-in-out;
+  padding: 1.25em 0;
+  height: 100vh;
+}
+
+.calculator-body {
+  padding: 0;
+  width: 21.875em;
+  margin: 0 auto;
+  transition: background-color 0.4s ease-in-out;
+}
+@media (min-width: 768px) {
+  .calculator-body {
+    width: 34.375em;
+  }
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  align-self: flex-end;
+}
+
+.calculator-display {
+  border-radius: 5px;
+  height: 90px;
+  margin: 20px 0;
+  text-align: right;
+  padding: 25px 10px;
+}
+
+.calculator-keypad-wrapper {
+  width: 100%;
+  height: 26.25em;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.938em;
+  padding: 1.8em;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+}
+
+.theme-1-theme body {
+  background-color: hsl(222deg, 26%, 31%);
+}
+.theme-1-theme a {
+  color: hsl(6deg, 63%, 50%);
+}
+.theme-1-theme a:hover {
+  color: #d96659;
+}
+.theme-1-theme .calculator-wrapper {
+  background-color: hsl(222deg, 26%, 31%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme-1-theme .calculator-display {
+  background-color: hsl(224deg, 36%, 15%);
+}
+.theme-1-theme .calculator-keypad-wrapper {
+  background-color: hsl(223deg, 31%, 20%);
+}
+
+.theme-2-theme body {
+  background-color: hsl(0deg, 0%, 90%);
+}
+.theme-2-theme a {
+  color: hsl(25deg, 98%, 40%);
+}
+.theme-2-theme a:hover {
+  color: #fc6b03;
+}
+.theme-2-theme .calculator-wrapper {
+  background-color: hsl(0deg, 0%, 90%);
+  color: hsl(60deg, 10%, 19%);
+}
+.theme-2-theme .calculator-display {
+  background-color: hsl(0deg, 0%, 93%);
+}
+.theme-2-theme .calculator-keypad-wrapper {
+  background-color: hsl(0deg, 5%, 81%);
+}
+
+.theme-3-theme body {
+  background-color: hsl(268deg, 75%, 9%);
+}
+.theme-3-theme a {
+  color: hsl(176deg, 100%, 44%);
+}
+.theme-3-theme a:hover {
+  color: #14ffef;
+}
+.theme-3-theme .calculator-wrapper {
+  background-color: hsl(268deg, 75%, 9%);
+  color: hsl(52deg, 100%, 62%);
+}
+.theme-3-theme .calculator-display {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme-3-theme .calculator-keypad-wrapper {
+  background-color: hsl(268deg, 71%, 12%);
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=radio] {
+  opacity: 0;
+  cursor: pointer;
+}
+
+fieldset {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.toggle-field-name {
+  padding: 35px 25px 0 0;
+  align-self: flex-end;
+}
+
+.toggle-background {
+  height: 25px;
+  width: 75px;
+  position: absolute;
+  border-radius: 40px;
+  bottom: 0;
+}
+
+.toggle-wrapper {
+  padding: 0px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.toggle-wrapper label {
+  padding: 5px 0 10px 0;
+}
+
+.toggle-circle {
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  transition: left 0.4s ease-in-out;
+}
+
+.calculator-keypad-wrapper button {
+  border-radius: 5px;
+  min-height: 60px;
+  min-width: 60px;
+  border: none;
+}
+
+.reset {
+  grid-column: 1/span 2;
+}
+
+.equals-btn {
+  grid-column: 3/span 2;
+}
+
+.theme-1-theme .toggle-background {
+  background-color: hsl(223deg, 31%, 20%);
+}
+.theme-1-theme .toggle-circle {
+  background-color: hsl(6deg, 63%, 50%);
+  left: 5px;
+}
+.theme-1-theme .math-btn {
+  background-color: hsl(30deg, 25%, 89%);
+  color: hsl(221deg, 14%, 31%);
+  box-shadow: 0 5px hsl(28deg, 16%, 65%);
+}
+.theme-1-theme .math-btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+}
+.theme-1-theme .function-btn {
+  background-color: hsl(225deg, 21%, 49%);
+  box-shadow: 0 5px hsl(224deg, 28%, 35%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme-1-theme .function-btn:hover {
+  background-color: #808bac;
+}
+.theme-1-theme .equals-btn {
+  background-color: hsl(6deg, 63%, 50%);
+  box-shadow: 0 5px hsl(6deg, 70%, 34%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme-1-theme .equals-btn:hover {
+  background-color: #d96659;
+}
+
+.theme-2-theme .toggle-background {
+  background-color: hsl(0deg, 5%, 81%);
+}
+.theme-2-theme .toggle-circle {
+  background-color: hsl(25deg, 98%, 40%);
+  left: 30px;
+}
+.theme-2-theme .math-btn {
+  background-color: hsl(45deg, 7%, 89%);
+  color: hsl(60deg, 10%, 19%);
+  box-shadow: 0 5px hsl(35deg, 11%, 61%);
+}
+.theme-2-theme .math-btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+}
+.theme-2-theme .function-btn {
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0 5px hsl(185deg, 58%, 25%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme-2-theme .function-btn:hover {
+  background-color: #46a2aa;
+}
+.theme-2-theme .equals-btn {
+  background-color: hsl(25deg, 98%, 40%);
+  box-shadow: 0 5px hsl(25deg, 99%, 27%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme-2-theme .equals-btn:hover {
+  background-color: #fc6b03;
+}
+
+.theme-3-theme .toggle-background {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme-3-theme .toggle-circle {
+  background-color: hsl(176deg, 100%, 44%);
+  left: 55px;
+}
+.theme-3-theme .math-btn {
+  background-color: hsl(268deg, 47%, 21%);
+  color: hsl(52deg, 100%, 62%);
+  box-shadow: 0 5px hsl(290deg, 70%, 36%);
+}
+.theme-3-theme .math-btn:hover {
+  background-color: #4d2a74;
+}
+.theme-3-theme .function-btn {
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0 5px hsl(285deg, 91%, 52%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme-3-theme .function-btn:hover {
+  background-color: #7a0aae;
+}
+.theme-3-theme .equals-btn {
+  background-color: hsl(176deg, 100%, 44%);
+  box-shadow: 0 5px hsl(177deg, 92%, 70%);
+  color: hsl(198deg, 20%, 13%);
+}
+.theme-3-theme .equals-btn:hover {
+  background-color: #14ffef;
+}
+
+/*# sourceMappingURL=index.css.map */

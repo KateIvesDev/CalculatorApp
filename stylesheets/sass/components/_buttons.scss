@@ -1,0 +1,118 @@
+@use '../utilities/mixins' as *;
+@use '../themes/themes' as *;
+@use '../utilities/variables' as *;
+
+button {
+    cursor: pointer;
+}
+
+//***************************
+//Toggle Switch
+//**************************
+
+input[type="radio"]{
+    opacity: 0;
+    cursor: pointer;
+}
+fieldset {
+    display: flex;
+    width: 50%;
+    flex-direction:row;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.toggle-field-name {
+    padding: 35px 25px 0 0;
+    align-self: flex-end;
+}
+
+.toggle-background {
+    height: 25px;
+    width: 75px;
+    position: absolute;
+    border-radius: 40px;
+    bottom: 0;
+}
+
+.toggle-wrapper{
+    padding: 0px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.toggle-wrapper label {
+    padding: 5px 0 10px 0;
+}
+
+.toggle-circle {
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    transition: left .4s ease-in-out;
+}
+
+//***************************
+//Keypad Buttons
+//**************************
+
+.calculator-keypad-wrapper button {
+    border-radius: #{$border-radius};
+    min-height: 60px;
+    min-width: 60px;
+    border: none;
+}
+
+.reset {
+    grid-column: 1 / span 2;
+}
+
+.equals-btn {
+    grid-column: 3/ span 2;
+}
+
+@include themify($themes) {
+
+    .toggle-background {
+        background-color: themed('keypad-bg-color');
+    }
+    .toggle-circle {
+        background-color: themed('toggle-btn-color');
+        left: themed('toggle-btn-position');
+    }
+    .math-btn {
+        background-color: themed('key-main-color');
+        color: themed('key-main-text-color');
+        box-shadow: 0 5px themed('key-main-shadow-color');
+
+        &:hover {
+            background-color: themed('key-main-active-color');
+        }
+    }
+
+    .function-btn {
+        background-color: themed('key-function-color');
+        box-shadow: 0 5px themed('key-function-shadow-color');
+        color: themed('key-function-text-color');
+
+        &:hover {
+            background-color: themed('key-function-active-color');
+        }
+    }
+
+    .equals-btn {
+        background-color: themed('key-equals-color');
+        box-shadow: 0 5px themed('key-equals-shadow-color');
+        color: themed('key-equals-text-color');
+
+        &:hover {
+            background-color: themed('key-equals-active-color');
+        }
+    }
+}

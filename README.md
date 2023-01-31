@@ -24,8 +24,11 @@ This is my solution to the [Calculator app challenge on Frontend Mentor](https:/
 Users should be able to:
 
 [x] See the size of the elements adjust based on their device's screen size
+
 [x] Perform mathmatical operations like addition, subtraction, multiplication, and division
+
 [x] Adjust the color theme based on their preference
+
 [x] **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
 ### Screenshot

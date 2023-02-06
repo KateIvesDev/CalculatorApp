@@ -9,16 +9,16 @@ class Calculator {
         this.operator = undefined
     }
     delete(){
-        if(this.currNum.toString().includes("")){
+        if(this.currNum.toString().includes("-")){
             this.currNum = 0
         }
         this.currNum = this.currNum.toString().slice(0,-1)
 
     }
     appendNumber(number){
+        
         if (number === '.' && this.currNum.includes('.')){
-            this.currNum = this.currNum.toString()
-            return this.currNum
+            return 
         }
         if(this.prevNum === ''){
             this.currNumText.innerText = ""
@@ -69,6 +69,9 @@ class Calculator {
         this.updateDisplay()
     }
     getNumber(number){
+        if (number === "." || this.currNum === "."){
+            return "0.0"
+        }
         let displayNum = Number(number).toLocaleString("en-US")
         if (displayNum.length > 15){
             alert('number is too big for this calculator')

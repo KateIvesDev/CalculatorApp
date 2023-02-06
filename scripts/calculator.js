@@ -9,11 +9,16 @@ class Calculator {
         this.operator = undefined
     }
     delete(){
+        if(this.currNum.toString().includes("")){
+            this.currNum = 0
+        }
         this.currNum = this.currNum.toString().slice(0,-1)
+
     }
     appendNumber(number){
         if (number === '.' && this.currNum.includes('.')){
-            return
+            this.currNum = this.currNum.toString()
+            return this.currNum
         }
         if(this.prevNum === ''){
             this.currNumText.innerText = ""

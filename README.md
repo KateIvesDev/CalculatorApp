@@ -33,6 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
+![CalculatorGif](https://github.com/KateIvesDev/CalculatorApp/blob/e063de9df7c955a526c8010ee42e595de78c376c/calculator.gif)
 
 ### Links
 
